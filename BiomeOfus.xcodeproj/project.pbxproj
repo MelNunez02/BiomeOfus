@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433812BBD9862003348E1 /* BiomeOfusApp.swift */; };
+		435433842BBD9862003348E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433832BBD9862003348E1 /* ContentView.swift */; };
+		435433862BBD9863003348E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435433852BBD9863003348E1 /* Assets.xcassets */; };
+		435433892BBD9863003348E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435433882BBD9863003348E1 /* Preview Assets.xcassets */; };
+		435433932BBD9863003348E1 /* BiomeOfusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433922BBD9863003348E1 /* BiomeOfusTests.swift */; };
+		4354339D2BBD9863003348E1 /* BiomeOfusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */; };
+		4354339F2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4354338F2BBD9863003348E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435433762BBD9862003348E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354337D2BBD9862003348E1;
+			remoteInfo = BiomeOfus;
+		};
+		435433992BBD9863003348E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 435433762BBD9862003348E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4354337D2BBD9862003348E1;
+			remoteInfo = BiomeOfus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4354337E2BBD9862003348E1 /* BiomeOfus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiomeOfus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		435433812BBD9862003348E1 /* BiomeOfusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusApp.swift; sourceTree = "<group>"; };
+		435433832BBD9862003348E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		435433852BBD9863003348E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435433882BBD9863003348E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4354338E2BBD9863003348E1 /* BiomeOfusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiomeOfusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		435433922BBD9863003348E1 /* BiomeOfusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusTests.swift; sourceTree = "<group>"; };
+		435433982BBD9863003348E1 /* BiomeOfusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiomeOfusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITests.swift; sourceTree = "<group>"; };
+		4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4354337B2BBD9862003348E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354338B2BBD9863003348E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435433952BBD9863003348E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		435433752BBD9862003348E1 = {
+			isa = PBXGroup;
+			children = (
+				435433802BBD9862003348E1 /* BiomeOfus */,
+				435433912BBD9863003348E1 /* BiomeOfusTests */,
+				4354339B2BBD9863003348E1 /* BiomeOfusUITests */,
+				4354337F2BBD9862003348E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4354337F2BBD9862003348E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4354337E2BBD9862003348E1 /* BiomeOfus.app */,
+				4354338E2BBD9863003348E1 /* BiomeOfusTests.xctest */,
+				435433982BBD9863003348E1 /* BiomeOfusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		435433802BBD9862003348E1 /* BiomeOfus */ = {
+			isa = PBXGroup;
+			children = (
+				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
+				435433832BBD9862003348E1 /* ContentView.swift */,
+				435433852BBD9863003348E1 /* Assets.xcassets */,
+				435433872BBD9863003348E1 /* Preview Content */,
+			);
+			path = BiomeOfus;
+			sourceTree = "<group>";
+		};
+		435433872BBD9863003348E1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				435433882BBD9863003348E1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		435433912BBD9863003348E1 /* BiomeOfusTests */ = {
+			isa = PBXGroup;
+			children = (
+				435433922BBD9863003348E1 /* BiomeOfusTests.swift */,
+			);
+			path = BiomeOfusTests;
+			sourceTree = "<group>";
+		};
+		4354339B2BBD9863003348E1 /* BiomeOfusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */,
+				4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */,
+			);
+			path = BiomeOfusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4354337D2BBD9862003348E1 /* BiomeOfus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435433A22BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfus" */;
+			buildPhases = (
+				4354337A2BBD9862003348E1 /* Sources */,
+				4354337B2BBD9862003348E1 /* Frameworks */,
+				4354337C2BBD9862003348E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BiomeOfus;
+			productName = BiomeOfus;
+			productReference = 4354337E2BBD9862003348E1 /* BiomeOfus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4354338D2BBD9863003348E1 /* BiomeOfusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435433A52BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfusTests" */;
+			buildPhases = (
+				4354338A2BBD9863003348E1 /* Sources */,
+				4354338B2BBD9863003348E1 /* Frameworks */,
+				4354338C2BBD9863003348E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				435433902BBD9863003348E1 /* PBXTargetDependency */,
+			);
+			name = BiomeOfusTests;
+			productName = BiomeOfusTests;
+			productReference = 4354338E2BBD9863003348E1 /* BiomeOfusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		435433972BBD9863003348E1 /* BiomeOfusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 435433A82BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfusUITests" */;
+			buildPhases = (
+				435433942BBD9863003348E1 /* Sources */,
+				435433952BBD9863003348E1 /* Frameworks */,
+				435433962BBD9863003348E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4354339A2BBD9863003348E1 /* PBXTargetDependency */,
+			);
+			name = BiomeOfusUITests;
+			productName = BiomeOfusUITests;
+			productReference = 435433982BBD9863003348E1 /* BiomeOfusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		435433762BBD9862003348E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					4354337D2BBD9862003348E1 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					4354338D2BBD9863003348E1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4354337D2BBD9862003348E1;
+					};
+					435433972BBD9863003348E1 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 4354337D2BBD9862003348E1;
+					};
+				};
+			};
+			buildConfigurationList = 435433792BBD9862003348E1 /* Build configuration list for PBXProject "BiomeOfus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 435433752BBD9862003348E1;
+			productRefGroup = 4354337F2BBD9862003348E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4354337D2BBD9862003348E1 /* BiomeOfus */,
+				4354338D2BBD9863003348E1 /* BiomeOfusTests */,
+				435433972BBD9863003348E1 /* BiomeOfusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4354337C2BBD9862003348E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435433892BBD9863003348E1 /* Preview Assets.xcassets in Resources */,
+				435433862BBD9863003348E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354338C2BBD9863003348E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435433962BBD9863003348E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4354337A2BBD9862003348E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435433842BBD9862003348E1 /* ContentView.swift in Sources */,
+				435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4354338A2BBD9863003348E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				435433932BBD9863003348E1 /* BiomeOfusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		435433942BBD9863003348E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4354339F2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift in Sources */,
+				4354339D2BBD9863003348E1 /* BiomeOfusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		435433902BBD9863003348E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354337D2BBD9862003348E1 /* BiomeOfus */;
+			targetProxy = 4354338F2BBD9863003348E1 /* PBXContainerItemProxy */;
+		};
+		4354339A2BBD9863003348E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4354337D2BBD9862003348E1 /* BiomeOfus */;
+			targetProxy = 435433992BBD9863003348E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		435433A02BBD9863003348E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		435433A12BBD9863003348E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		435433A32BBD9863003348E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BiomeOfus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		435433A42BBD9863003348E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BiomeOfus/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		435433A62BBD9863003348E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiomeOfus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiomeOfus";
+			};
+			name = Debug;
+		};
+		435433A72BBD9863003348E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BiomeOfus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BiomeOfus";
+			};
+			name = Release;
+		};
+		435433A92BBD9863003348E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiomeOfus;
+			};
+			name = Debug;
+		};
+		435433AA2BBD9863003348E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BiomeOfus.BiomeOfusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BiomeOfus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		435433792BBD9862003348E1 /* Build configuration list for PBXProject "BiomeOfus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435433A02BBD9863003348E1 /* Debug */,
+				435433A12BBD9863003348E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435433A22BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435433A32BBD9863003348E1 /* Debug */,
+				435433A42BBD9863003348E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435433A52BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435433A62BBD9863003348E1 /* Debug */,
+				435433A72BBD9863003348E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		435433A82BBD9863003348E1 /* Build configuration list for PBXNativeTarget "BiomeOfusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				435433A92BBD9863003348E1 /* Debug */,
+				435433AA2BBD9863003348E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 435433762BBD9862003348E1 /* Project object */;
+}

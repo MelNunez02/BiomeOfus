@@ -1,46 +1,38 @@
-//
-//  ContentView.swift
-//  BiomeOfus
-//
-//  Created by Melanie Nunez on 4/3/24.
-//
-
 import SwiftUI
 
-struct ContentView: View {
-    private var data: [Int] = Array(1...20)
-    private let colors: [Color] = [.red, .green, .blue, .yellow]
-    
-    private let adaptiveColumns = [
-        GridItem(.adaptive(minimum: 170))
-    ]
-    
+struct DashboardView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: adaptiveColumns, spacing: 20) {
-                    ForEach(data, id: \.self) { number in
-                        ZStack {
-                            Rectangle()
-                                .frame(width: 170, height: 170)
-                                .foregroundColor(colors[number%4])
-                                .cornerRadius(30)
-                            Text("\(number)")
-                                .foregroundColor(.white)
-                                .font(.system(size: 80, weight: .medium, design: .rounded))
+            VStack {
+                Text("Pick Your Biome!")
+                    .padding()
+                
+                ScrollView {
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
+                        ForEach(1..<13) { index in
+                            Image("image\(index)")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 100, height: 100)
+                                .cornerRadius(12)
+                                .padding(5)
                         }
                     }
-                    
+                    .padding(12)
                 }
             }
-            .padding()
-            .navigationTitle("Dashboard")
+            .background(Image("Background") // Set your background image here
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all))
+            .navigationTitle("BiomeOfUs!")
+            
         }
     }
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
-        }
+}
+
+struct DashboardView_Previews: PreviewProvider {
+    static var previews: some View {
+        DashboardView()
     }
 }

@@ -1,17 +1,10 @@
-//
-//  BiomeOfusApp.swift
-//  BiomeOfus
-//
-//  Created by Sergio Nunez on 4/3/24.
-//
-
 import SwiftUI
 
 @main
-struct BiomeOfusApp: App {
+struct MyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DashboardView() // Set your main view here
         }
     }
 }

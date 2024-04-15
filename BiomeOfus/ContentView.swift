@@ -5,6 +5,10 @@ struct DashboardView: View {
         NavigationView {
             VStack {
                 Text("Pick Your Biome!")
+                    .foregroundColor(.white)
+                    .font(.system(size: 20))
+                    .font(.headline .bold())
+                    .shadow(color: .gray, radius: 5, x: 2, y: 2)
                     .padding()
                 
                 ScrollView {

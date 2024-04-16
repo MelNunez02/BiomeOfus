@@ -4,12 +4,16 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image("bioMeWord")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
                 Text("Pick Your Biome!")
-                    .foregroundColor(.white)
-                    .font(.system(size: 20))
-                    .font(.headline .bold())
-                    .shadow(color: .gray, radius: 5, x: 2, y: 2)
-                    .padding()
+                    .fontWeight(.black)
+                    .foregroundColor(Color(red: 244/255, green: 252/255, blue: 3/255))
+                    .font(.system(size: 35))
+                    .font(.largeTitle .uppercaseSmallCaps())
+                    .shadow(color: .black, radius: 13, x: 3, y: 3)
+                    
                 
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
@@ -29,7 +33,7 @@ struct DashboardView: View {
                 .resizable()
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all))
-            .navigationTitle("BiomeOfUs!")
+            
             
         }
     }

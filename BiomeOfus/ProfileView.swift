@@ -36,11 +36,7 @@ struct ProfileView: View {
     ProfileView()
 }
 
-struct MyCustomModifier: ViewModifier {
-    func body(content: Content) -> some View {
-        AnyView(content.edgesIgnoringSafeArea(.all))
-    }
-}
+
 
 
 

@@ -52,27 +52,48 @@ struct DashboardView: View {
         }
     }
 }
-
+//Profile screen code
 struct ProfileViewScn: View {
     @Binding var showContentView: Bool
 
     var body: some View {
         ZStack { // Add ZStack for layering content
-            Color.gray // Example background
-            Text("Profile View")
-                .gesture(
-                    DragGesture(minimumDistance: 20, coordinateSpace: .local)
-                        .onEnded { value in
-                            if value.translation.width < 0 {
-                                showContentView = false
-                            }
+            //Color.blue // Example background
+            NavigationView {
+                Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .zIndex(1)
+                    .modifier(MyCustomModifier())
+                
+            }
+            VStack {
+                Image("profileHolder")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 177)
+                    .offset(x: 0, y: -255)
+                    .zIndex(3)
+                    .shadow(radius: 10)
+                
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Profile")
+            .gesture(
+                DragGesture(minimumDistance: 20, coordinateSpace: .local)
+                    .onEnded { value in
+                        if value.translation.width < 0 {
+                            showContentView = false
                         }
-                )
-         }
+                    }
+            )
+           
+        }
     }
+        
 }
 
-
+//Big image on dashboard screen
 struct ImageTitleModifier: ViewModifier {
     let imageName: String
     
@@ -85,6 +106,7 @@ struct ImageTitleModifier: ViewModifier {
                         .scaledToFit()
                         .frame(height: 333)
                         .padding(.top, 150)
+                        .edgesIgnoringSafeArea(.top)
                 }
             }
     }
@@ -95,3 +117,11 @@ struct DashboardView_Previews: PreviewProvider {
         DashboardView()
     }
 }
+
+struct MyCustomModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        AnyView(content.edgesIgnoringSafeArea(.all))
+    }
+}
+
+

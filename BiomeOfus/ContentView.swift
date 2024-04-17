@@ -55,7 +55,7 @@ struct DashboardView: View {
 //Profile screen code
 struct ProfileViewScn: View {
     @Binding var showContentView: Bool
-
+    
     var body: some View {
         ZStack { // Add ZStack for layering content
             //Color.blue // Example background
@@ -68,15 +68,26 @@ struct ProfileViewScn: View {
                 
             }
             VStack {
+                Text("User Name: ")
+                    .fontWeight(.black)
+                    .foregroundColor(Color(red: 244/255, green: 252/255, blue: 3/255))
+                    .font(.system(size: 25))
+                    .font(.largeTitle .uppercaseSmallCaps())
+                    .shadow(color: .black, radius: 13, x: 3, y: 3)
+                    .offset(x: 0, y: -70)
+                    .zIndex(3)
+                
                 Image("profileHolder")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 177)
-                    .offset(x: 0, y: -255)
+                    .offset(x: 0, y: -300)
                     .zIndex(3)
                     .shadow(radius: 10)
+            
                 
             }
+            
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Profile")
             .gesture(
@@ -90,7 +101,6 @@ struct ProfileViewScn: View {
            
         }
     }
-        
 }
 
 //Big image on dashboard screen

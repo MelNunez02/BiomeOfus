@@ -19,12 +19,15 @@ struct DashboardView: View {
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
                         ForEach(1..<13) { index in
-                            Image("image\(index)")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(12)
-                                .padding(5)
+                            NavigationLink(destination: ForestBiome()) {
+                                Image("image\(index)")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(12)
+                                    .padding(5)
+                            }
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                     .padding(12)
@@ -124,8 +127,8 @@ struct ImageTitleModifier: ViewModifier {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScn()
-        //DashboardView()
+        //LoginScn()
+        DashboardView()
     }
 }
 

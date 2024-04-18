@@ -36,26 +36,133 @@ struct BiomeView: View {
                                 .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
                                 .padding()
                         )
-           
-                Button(action: {
-                    print("Apple pressed")
-                    showBiomeForm = true
+                        .offset(x:0, y:50)
+                
+                VStack{
+                    Button(action: {
+                        print("Apple pressed")
+                        showBiomeForm = true
+                        
+                    }) {
+                        Image("clearApple")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50)
+                            .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                            .zIndex(1)
+                   }
+                    .buttonStyle(.borderless)
+                    //Presents target View
+                    .sheet(isPresented: $showBiomeForm) {
+                        BiomeForm()
+                            .presentationDetents([.large])
+                            .edgesIgnoringSafeArea(.all)
+                    }
                     
-                }) {
-                    Image("clearApple")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 50)
-                        .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
-                        .zIndex(1)
-               }
-                .buttonStyle(.borderless)
-                //Presents target View
-                .sheet(isPresented: $showBiomeForm) {
-                    BiomeForm()
-                        .presentationDetents([.large])
-                        .edgesIgnoringSafeArea(.all)
-                }
+                    HStack{
+                        Button(action: {
+                            print("Apple pressed")
+                            showBiomeForm = true
+                            
+                        }) {
+                            Image("clearApple")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .zIndex(1)
+                       }
+                        .buttonStyle(.borderless)
+                        //Presents target View
+                        .sheet(isPresented: $showBiomeForm) {
+                            BiomeForm()
+                                .presentationDetents([.large])
+                                .edgesIgnoringSafeArea(.all)
+                        }
+                        
+                        Button(action: {
+                            print("Apple pressed")
+                            showBiomeForm = true
+                            
+                        }) {
+                            Image("clearApple")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .zIndex(1)
+                       }
+                        .buttonStyle(.borderless)
+                        //Presents target View
+                        .sheet(isPresented: $showBiomeForm) {
+                            BiomeForm()
+                                .presentationDetents([.large])
+                                .edgesIgnoringSafeArea(.all)
+                        }
+                    }
+                    HStack{
+                        Button(action: {
+                            print("Apple pressed")
+                            showBiomeForm = true
+                            
+                        }) {
+                            Image("clearApple")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .zIndex(1)
+                       }
+                        .buttonStyle(.borderless)
+                        //Presents target View
+                        .sheet(isPresented: $showBiomeForm) {
+                            BiomeForm()
+                                .presentationDetents([.large])
+                                .edgesIgnoringSafeArea(.all)
+                        }
+                        
+                        Button(action: {
+                            print("Apple pressed")
+                            showBiomeForm = true
+                            
+                        }) {
+                            Image("clearApple")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .zIndex(1)
+                       }
+                        .buttonStyle(.borderless)
+                        //Presents target View
+                        .sheet(isPresented: $showBiomeForm) {
+                            BiomeForm()
+                                .presentationDetents([.large])
+                                .edgesIgnoringSafeArea(.all)
+                        }
+                        
+                        Button(action: {
+                            print("Apple pressed")
+                            showBiomeForm = true
+                            
+                        }) {
+                            Image("clearApple")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 50)
+                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .zIndex(1)
+                       }
+                        .buttonStyle(.borderless)
+                        //Presents target View
+                        .sheet(isPresented: $showBiomeForm) {
+                            BiomeForm()
+                                .presentationDetents([.large])
+                                .edgesIgnoringSafeArea(.all)
+                        }
+                    }
+                }.offset(x:-25, y:20)
+                
             }
             .offset(x: 45, y: 125)
         }

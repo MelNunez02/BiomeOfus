@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct LoginScn: View {
-    @State private var username: String = ""
+       @State private var username: String = ""
        @State private var password: String = ""
        @State private var isLoggedin: Bool = false
        @State private var showAlert: Bool = false
+       
 
     var body: some View {
         ZStack {
@@ -36,7 +37,8 @@ struct LoginScn: View {
                 .padding()
                 
                 if isLoggedin {
-                    NavigationView {
+                    NavigationLink(destination: DashboardView()) {
+                        DashboardView()
                     }
                     .zIndex(1)
                 } else {

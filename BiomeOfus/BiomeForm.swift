@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BiomeForm: View {
     @AppStorage("BTitle") private var title: String = "Book Title" // Default title
+    @AppStorage("BAuthor") private var author: String = "Book Author" // Default title
     @State private var paragraphText: String = ""
     
     
@@ -53,9 +54,9 @@ struct BiomeForm: View {
                         .frame(width: 200, height: 50)
                         .shadow(color: .black, radius: 10, x: 0, y: 0)
                         .overlay(
-                            TextField("  Author",text: $title) // Display the title inside the rectangle
+                            TextField("  Author",text: $author) // Display the title inside the rectangle
                                 .font(.system(size: 20))
-                                .fontWeight(.bold)
+                                .fontWeight(.semibold)
                                 .foregroundColor(.white)
                                 .frame(width: 200)
                                 .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
@@ -72,7 +73,7 @@ struct BiomeForm: View {
                             
                             TextEditor(text: $paragraphText) // Display the title inside the rectangle
                                 .font(.largeTitle)
-                                .fontWeight(.bold)
+                                .fontWeight(.medium)
                                 .foregroundColor(.green)
                                 .frame(width: 200, height: 200)
                                 .onAppear{

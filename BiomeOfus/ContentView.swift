@@ -3,76 +3,91 @@ import SwiftUI
 struct DashboardView: View {
     @State private var showProfile = false
     @State private var isBiomeViewPresented = false
+    @State private var headerImage = true
     
     var body: some View {
-        NavigationStack {
-            VStack {
+        
+        ZStack{
+            if !showProfile {
+                Image("bioMeWord")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 333)
+                    .offset(x: 0, y: -300)
+                    .zIndex(10)
+                    .shadow(radius: 10)
+            }
+            
+            NavigationStack {
+                VStack {
 
-                Text("Pick Your Biome!")
-                    .fontWeight(.black)
-                    .foregroundColor(Color(red: 244/255, green: 252/255, blue: 3/255))
-                    .font(.system(size: 35))
-                    .font(.largeTitle .uppercaseSmallCaps())
-                    .shadow(color: .black, radius: 13, x: 3, y: 3)
-                    .padding(.top, 170)
+                    Text("Pick Your Biome!")
+                        .fontWeight(.black)
+                        .foregroundColor(Color(red: 244/255, green: 252/255, blue: 3/255))
+                        .font(.system(size: 35))
+                        .font(.largeTitle .uppercaseSmallCaps())
+                        .shadow(color: .black, radius: 13, x: 3, y: 3)
+                        .padding(.top, 170)
+                        
                     
-                
-                ScrollView {
-                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
-                        ForEach(1..<13) { index in
-                            //Buttons code start here
-                            Button(action: {
-                                if index == 10 {
-                                    // Present BiomeView here
-                                    self.isBiomeViewPresented = true
-                                } else {
-                                    // Default behavior for other images
-                                    print("Image \(index) tapped!")
+                    ScrollView {
+                        LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
+                            ForEach(1..<13) { index in
+                                //Buttons code start here
+                                Button(action: {
+                                    if index == 10 {
+                                        // Present BiomeView here
+                                        self.isBiomeViewPresented = true
+                                    } else {
+                                        // Default behavior for other images
+                                        print("Image \(index) tapped!")
+                                    }
+                    
+                                }) {
+                                    Image("image\(index)")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 100, height: 100)
+                                        .cornerRadius(12)
+                                        .padding(5)
                                 }
-                
-                            }) {
-                                Image("image\(index)")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                                    .cornerRadius(12)
-                                    .padding(5)
-                            }
-                            .buttonStyle(.borderless)
-                            .sheet(isPresented: $isBiomeViewPresented) {
-                                BiomeView()
-                                    .presentationDetents([.large])
-                                    .edgesIgnoringSafeArea(.all)
+                                .buttonStyle(.borderless)
+                                .sheet(isPresented: $isBiomeViewPresented) {
+                                    BiomeView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
                             }
                         }
+                        .padding(12)
                     }
-                    .padding(12)
                 }
-            }
-            .navigationTitle("")
-            .navigationBarTitleDisplayMode(.inline)
-            .modifier(ImageTitleModifier(imageName: "bioMeWord"))
-            .background(Image("Background")
-                .resizable()
-                .scaledToFill()
-                .edgesIgnoringSafeArea(.all))
-            .gesture( // Added .gesture()
-                            DragGesture(minimumDistance: 20, coordinateSpace: .local)
-                                .onEnded { value in
-                                    if value.translation.width > 0 {
-                                        showProfile = true
-                                    }
-                                }
-                        )
-            .navigationDestination(isPresented: $showProfile) {
-                ProfileViewScn(showContentView: $showProfile)
-            }
-            
-            
-            
 
+                .background(Image("Background")
+                    .resizable()
+                    .scaledToFill()
+                    .edgesIgnoringSafeArea(.all))
+                    
+                .gesture( // Added .gesture()
+                                DragGesture(minimumDistance: 20, coordinateSpace: .local)
+                                    .onEnded { value in
+                                        if value.translation.width > 0 {
+                                            showProfile = true
+                                            
+                                        }
+                                    }
+                            )
+                .navigationDestination(isPresented: $showProfile) {
+                    ProfileViewScn(showContentView: $showProfile)
+                }
+                
+                
+                
+
+            }
         }
-    }
+    }// end body
+    
 }
 //Profile screen code
 struct ProfileViewScn: View {

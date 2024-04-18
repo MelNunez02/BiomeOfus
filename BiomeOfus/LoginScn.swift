@@ -12,6 +12,7 @@ struct LoginScn: View {
        @State private var username: String = ""
        @State private var password: String = ""
        @State private var isLoggedin: Bool = false
+       @State private var showDashboard = false // For presenting the Dashboard
        @State private var showAlert: Bool = false
 
     var body: some View {
@@ -37,12 +38,7 @@ struct LoginScn: View {
                 .padding()
                 
                 if isLoggedin {
-                    NavigationView {
-                        DashboardView()
-                        .navigationDestination(isPresented: $isDetailViewPresented) {
-                            DashboardView()
-                        }
-                    }
+                    ContentView(showDashboard: $showDashboard)
                     
                 } else {
                     VStack {
@@ -86,7 +82,20 @@ struct LoginScn: View {
     }
 }//end of screeen
 
+struct ContentView: View {
+    @Binding var showDashboard: Bool
 
+    var body: some View {
+        // ... Your ContentView layout ...
+
+        Button("Show Dashboard") {
+            showDashboard = true
+        }
+        .sheet(isPresented: $showDashboard) {
+            DashboardView()  // Directly instantiate DashboardView
+        }
+    }
+}
 
 func isValid(username: String, password: String) -> Bool {
    // Add your validation logic here (e.g., check against database)

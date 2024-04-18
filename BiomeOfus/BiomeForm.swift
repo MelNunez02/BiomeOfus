@@ -39,7 +39,7 @@ struct BiomeForm: View {
                         .shadow(color: .black, radius: 10, x: 0, y: 0)
                         .overlay(
                             TextField("  Book Title",text:$title) // Display the title inside the rectangle
-                                .font(.largeTitle)
+                                .font(.system(size: 25))
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .frame(width: 200)
@@ -53,8 +53,8 @@ struct BiomeForm: View {
                         .frame(width: 200, height: 50)
                         .shadow(color: .black, radius: 10, x: 0, y: 0)
                         .overlay(
-                            TextField("  Author",text:$title) // Display the title inside the rectangle
-                                .font(.largeTitle)
+                            TextField("  Author",text: $title) // Display the title inside the rectangle
+                                .font(.system(size: 20))
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .frame(width: 200)

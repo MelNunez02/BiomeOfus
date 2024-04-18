@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2189F8FA2BBF2E2B00264860 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433832BBD9862003348E1 /* ContentView.swift */; };
+		2189F8FA2BBF2E2B00264860 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433832BBD9862003348E1 /* DashboardView.swift */; };
 		2189F9012BBF3A4A00264860 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9002BBF3A4A00264860 /* image1.png */; };
 		2189F9032BBF3FD400264860 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9022BBF3FD400264860 /* image2.png */; };
 		2189F9052BBF400300264860 /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9042BBF400300264860 /* image3.png */; };
@@ -66,7 +66,7 @@
 		434459FC2BD1893E00C9B5BC /* BiomeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeForm.swift; sourceTree = "<group>"; };
 		4354337E2BBD9862003348E1 /* BiomeOfus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiomeOfus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435433812BBD9862003348E1 /* BiomeOfusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusApp.swift; sourceTree = "<group>"; };
-		435433832BBD9862003348E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		435433832BBD9862003348E1 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		435433852BBD9863003348E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435433882BBD9863003348E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4354338E2BBD9863003348E1 /* BiomeOfusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiomeOfusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,7 +130,7 @@
 				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
 				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
-				435433832BBD9862003348E1 /* ContentView.swift */,
+				435433832BBD9862003348E1 /* DashboardView.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
 				435433872BBD9863003348E1 /* Preview Content */,
 			);
@@ -318,7 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2189F8FA2BBF2E2B00264860 /* ContentView.swift in Sources */,
+				2189F8FA2BBF2E2B00264860 /* DashboardView.swift in Sources */,
 				438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */,
 				A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */,
 				434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */,

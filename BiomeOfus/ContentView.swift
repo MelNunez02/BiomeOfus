@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var showProfile = false
+    @State private var isBiomeViewPresented = false
     
     var body: some View {
         NavigationStack {
@@ -19,12 +20,30 @@ struct DashboardView: View {
                 ScrollView {
                     LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
                         ForEach(1..<13) { index in
-                            Image("image\(index)")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 100, height: 100)
-                                .cornerRadius(12)
-                                .padding(5)
+                            //Buttons code start here
+                            Button(action: {
+                                if index == 10 {
+                                    // Present BiomeView here
+                                    self.isBiomeViewPresented = true
+                                } else {
+                                    // Default behavior for other images
+                                    print("Image \(index) tapped!")
+                                }
+                
+                            }) {
+                                Image("image\(index)")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 100, height: 100)
+                                    .cornerRadius(12)
+                                    .padding(5)
+                            }
+                            .buttonStyle(.borderless)
+                            .sheet(isPresented: $isBiomeViewPresented) {
+                                BiomeView()
+                                    .presentationDetents([.large])
+                                    .edgesIgnoringSafeArea(.all)
+                            }
                         }
                     }
                     .padding(12)
@@ -48,6 +67,9 @@ struct DashboardView: View {
             .navigationDestination(isPresented: $showProfile) {
                 ProfileViewScn(showContentView: $showProfile)
             }
+            
+            
+            
 
         }
     }
@@ -124,8 +146,9 @@ struct ImageTitleModifier: ViewModifier {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginScn()
-        //DashboardView()
+        //LoginScn()
+        DashboardView()
+        //BiomeView()
     }
 }
 

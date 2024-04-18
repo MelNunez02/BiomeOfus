@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct LoginScn: View {
-    @State private var username: String = ""
+       @State private var isDetailViewPresented = false
+       @State private var username: String = ""
        @State private var password: String = ""
        @State private var isLoggedin: Bool = false
        @State private var showAlert: Bool = false
@@ -37,8 +38,12 @@ struct LoginScn: View {
                 
                 if isLoggedin {
                     NavigationView {
+                        DashboardView()
+                        .navigationDestination(isPresented: $isDetailViewPresented) {
+                            DashboardView()
+                        }
                     }
-                    .zIndex(1)
+                    
                 } else {
                     VStack {
                         TextField("Username", text: $username)
@@ -55,6 +60,7 @@ struct LoginScn: View {
                             // Validate username and password
                             if isValid(username: username, password: password) {
                                 isLoggedin = true
+                                isDetailViewPresented = true
                             } else {
                                 showAlert = true
                             }
@@ -66,12 +72,13 @@ struct LoginScn: View {
                                 .cornerRadius(10)
                         }
                         .padding()
-                        
+                     
                     }
                     .padding()
                     .zIndex(1)
                 }
             }
+            
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Error"), message: Text("Invalid username or password"), dismissButton: .default(Text("OK")))

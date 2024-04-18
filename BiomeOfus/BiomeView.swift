@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct BiomeView: View {
+    @AppStorage("title") private var title: String = "BiomeOfUs" // Default title
+
     var body: some View {
         ZStack {
-            Image("theAppleTree")
+            Image("Forest")
                 .resizable()
                 .scaledToFill()
                 .modifier(MyCustomModifier())
@@ -18,6 +20,21 @@ struct BiomeView: View {
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
+                RoundedRectangle(cornerRadius: 8)
+                        .fill(Color.green.opacity(0.4)) // Adjust the color and opacity here
+                        .frame(width: 200, height: 50)
+                        .offset(x: -150, y: -400)
+                        .shadow(color: .black, radius: 10, x: 0, y: 0)
+                        .overlay(
+                            TextField("BiomeOfUs",text:$title) // Display the title inside the rectangle
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                                .frame(width: 200)
+                                .offset(x: -150, y: -400)
+                                .shadow(color: .accentColor, radius: 10, x: 0, y: 0)
+                                .padding()
+                        )
            
                 Button(action: {
                     print("Apple pressed")
@@ -25,7 +42,7 @@ struct BiomeView: View {
                     Image("clearApple")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .frame(width: 50)
                         .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
                         .zIndex(1)
                }

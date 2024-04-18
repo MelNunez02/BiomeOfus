@@ -124,7 +124,8 @@ struct ImageTitleModifier: ViewModifier {
 
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
-        DashboardView()
+        LoginScn()
+        //DashboardView()
     }
 }
 

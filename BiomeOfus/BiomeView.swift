@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BiomeView: View {
     @AppStorage("title") private var title: String = "BiomeOfUs" // Default title
+    @State private var showBiomeForm = false
 
     var body: some View {
         ZStack {
@@ -38,6 +39,8 @@ struct BiomeView: View {
            
                 Button(action: {
                     print("Apple pressed")
+                    showBiomeForm = true
+                    
                 }) {
                     Image("clearApple")
                         .resizable()
@@ -47,6 +50,12 @@ struct BiomeView: View {
                         .zIndex(1)
                }
                 .buttonStyle(.borderless)
+                //Presents target View
+                .sheet(isPresented: $showBiomeForm) {
+                    BiomeForm()
+                        .presentationDetents([.large])
+                        .edgesIgnoringSafeArea(.all)
+                }
             }
             .offset(x: 45, y: 125)
         }

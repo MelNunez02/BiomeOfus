@@ -38,6 +38,8 @@ struct DashboardView: View {
                                     if index == 10 {
                                         // Present BiomeView here
                                         self.isBiomeViewPresented = true
+                                    } else if index == 2 {
+                                        self.isBiomeViewPresented = true
                                     } else {
                                         // Default behavior for other images
                                         print("Image \(index) tapped!")
@@ -73,7 +75,6 @@ struct DashboardView: View {
                                     .onEnded { value in
                                         if value.translation.width > 0 {
                                             showProfile = true
-                                            
                                         }
                                     }
                             )

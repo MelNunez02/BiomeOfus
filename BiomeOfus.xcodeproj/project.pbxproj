@@ -21,6 +21,7 @@
 		2189F9152BBF47F200264860 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9142BBF47F200264860 /* Background.png */; };
 		2189F9172BBF4B5500264860 /* image11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9162BBF4B5500264860 /* image11.png */; };
 		2189F9192BBF4CDE00264860 /* image12.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189F9182BBF4CDE00264860 /* image12.png */; };
+		434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434459FC2BD1893E00C9B5BC /* BiomeForm.swift */; };
 		435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435433812BBD9862003348E1 /* BiomeOfusApp.swift */; };
 		435433862BBD9863003348E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435433852BBD9863003348E1 /* Assets.xcassets */; };
 		435433892BBD9863003348E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435433882BBD9863003348E1 /* Preview Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		2189F9142BBF47F200264860 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
 		2189F9162BBF4B5500264860 /* image11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image11.png; sourceTree = "<group>"; };
 		2189F9182BBF4CDE00264860 /* image12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image12.png; sourceTree = "<group>"; };
+		434459FC2BD1893E00C9B5BC /* BiomeForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeForm.swift; sourceTree = "<group>"; };
 		4354337E2BBD9862003348E1 /* BiomeOfus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiomeOfus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435433812BBD9862003348E1 /* BiomeOfusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusApp.swift; sourceTree = "<group>"; };
 		435433832BBD9862003348E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		435433802BBD9862003348E1 /* BiomeOfus */ = {
 			isa = PBXGroup;
 			children = (
+				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
 				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
 				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
@@ -318,6 +321,7 @@
 				2189F8FA2BBF2E2B00264860 /* ContentView.swift in Sources */,
 				438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */,
 				A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */,
+				434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */,
 				435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

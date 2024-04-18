@@ -91,6 +91,7 @@ struct ContentView: View {
         Button("Show Dashboard") {
             showDashboard = true
         }
+        .foregroundColor(.white)
         .sheet(isPresented: $showDashboard) {
             DashboardView()  // Directly instantiate DashboardView
         }

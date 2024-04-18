@@ -84,8 +84,6 @@ struct ProfileViewScn: View {
                     .offset(x: 0, y: -300)
                     .zIndex(3)
                     .shadow(radius: 10)
-            
-                
             }
             
             .navigationBarTitleDisplayMode(.inline)
@@ -98,7 +96,6 @@ struct ProfileViewScn: View {
                         }
                     }
             )
-           
         }
     }
 }
@@ -125,6 +122,7 @@ struct ImageTitleModifier: ViewModifier {
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
+        //ProfileView()
     }
 }
 

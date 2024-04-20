@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct LoginScn: View {
+       @State private var isDetailViewPresented = false
        @State private var username: String = ""
        @State private var password: String = ""
        @State private var isLoggedin: Bool = false
+       @State private var showDashboard = false // For presenting the Dashboard
        @State private var showAlert: Bool = false
        
 
@@ -37,10 +39,8 @@ struct LoginScn: View {
                 .padding()
                 
                 if isLoggedin {
-                    NavigationLink(destination: DashboardView()) {
-                        DashboardView()
-                    }
-                    .zIndex(1)
+                    ContentView(showDashboard: $showDashboard)
+                    
                 } else {
                     VStack {
                         TextField("Username", text: $username)
@@ -57,6 +57,7 @@ struct LoginScn: View {
                             // Validate username and password
                             if isValid(username: username, password: password) {
                                 isLoggedin = true
+                                isDetailViewPresented = true
                             } else {
                                 showAlert = true
                             }
@@ -68,12 +69,13 @@ struct LoginScn: View {
                                 .cornerRadius(10)
                         }
                         .padding()
-                        
+                     
                     }
                     .padding()
                     .zIndex(1)
                 }
             }
+            
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Error"), message: Text("Invalid username or password"), dismissButton: .default(Text("OK")))
@@ -81,7 +83,21 @@ struct LoginScn: View {
     }
 }//end of screeen
 
+struct ContentView: View {
+    @Binding var showDashboard: Bool
 
+    var body: some View {
+        // ... Your ContentView layout ...
+
+        Button("Show Dashboard") {
+            showDashboard = true
+        }
+        .foregroundColor(.white)
+        .sheet(isPresented: $showDashboard) {
+            DashboardView()  // Directly instantiate DashboardView
+        }
+    }
+}
 
 func isValid(username: String, password: String) -> Bool {
    // Add your validation logic here (e.g., check against database)

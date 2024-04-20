@@ -30,6 +30,7 @@
 		4354339F2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */; };
 		438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D401E2BD010DE00AAFE8D /* BiomeView.swift */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
+		A0CE12122BD0D15B000CB4DA /* ForestBiome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		438D401E2BD010DE00AAFE8D /* BiomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeView.swift; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
+		A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestBiome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

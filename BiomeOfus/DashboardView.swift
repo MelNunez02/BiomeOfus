@@ -35,12 +35,37 @@ struct DashboardView: View {
                             ForEach(1..<13) { index in
                                 //Buttons code start here
                                 Button(action: {
-                                    if index == 10 {
+                                    if index == 0 {
                                         // Present BiomeView here
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 1 {
                                         self.isBiomeViewPresented = true
                                     } else if index == 2 {
                                         self.isBiomeViewPresented = true
-                                    } else {
+                                    } else if index == 3 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 4 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 5 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 6 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 7 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 8 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 9 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 10 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 11 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 12 {
+                                        self.isBiomeViewPresented = true
+                                    } else if index == 13 {
+                                        self.isBiomeViewPresented = true
+                                    }
+                                    else {
                                         // Default behavior for other images
                                         print("Image \(index) tapped!")
                                     }

@@ -29,8 +29,11 @@
 		4354339D2BBD9863003348E1 /* BiomeOfusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */; };
 		4354339F2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */; };
 		438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D401E2BD010DE00AAFE8D /* BiomeView.swift */; };
+		43C88AB12BD55D690057757B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C88AB02BD55D690057757B /* String.swift */; };
+		43ED5E222BDAF15D00EE247B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E212BDAF15D00EE247B /* FirebaseAuth */; };
+		43ED5E242BDAF15D00EE247B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E232BDAF15D00EE247B /* FirebaseDatabase */; };
+		43ED5E262BDAF15D00EE247B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E252BDAF15D00EE247B /* FirebaseFirestore */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
-		A0CE12122BD0D15B000CB4DA /* ForestBiome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +79,8 @@
 		4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITests.swift; sourceTree = "<group>"; };
 		4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		438D401E2BD010DE00AAFE8D /* BiomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeView.swift; sourceTree = "<group>"; };
+		43C88AB02BD55D690057757B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
-		A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestBiome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43ED5E242BDAF15D00EE247B /* FirebaseDatabase in Frameworks */,
+				43ED5E222BDAF15D00EE247B /* FirebaseAuth in Frameworks */,
+				43ED5E262BDAF15D00EE247B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,11 +134,9 @@
 		435433802BBD9862003348E1 /* BiomeOfus */ = {
 			isa = PBXGroup;
 			children = (
-				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
-				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
+				43C88AAD2BD55A410057757B /* Extensions */,
+				43C88AAC2BD5561F0057757B /* Views */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
-				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
-				435433832BBD9862003348E1 /* DashboardView.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
 				435433872BBD9863003348E1 /* Preview Content */,
 			);
@@ -177,6 +181,25 @@
 			path = BiomeOfusUITests;
 			sourceTree = "<group>";
 		};
+		43C88AAC2BD5561F0057757B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				435433832BBD9862003348E1 /* DashboardView.swift */,
+				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
+				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
+				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43C88AAD2BD55A410057757B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				43C88AB02BD55D690057757B /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,6 +216,11 @@
 			dependencies = (
 			);
 			name = BiomeOfus;
+			packageProductDependencies = (
+				43ED5E212BDAF15D00EE247B /* FirebaseAuth */,
+				43ED5E232BDAF15D00EE247B /* FirebaseDatabase */,
+				43ED5E252BDAF15D00EE247B /* FirebaseFirestore */,
+			);
 			productName = BiomeOfus;
 			productReference = 4354337E2BBD9862003348E1 /* BiomeOfus.app */;
 			productType = "com.apple.product-type.application";
@@ -265,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 435433752BBD9862003348E1;
+			packageReferences = (
+				43ED5E202BDAF15D00EE247B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4354337F2BBD9862003348E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -324,6 +355,7 @@
 				438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */,
 				A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */,
 				434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */,
+				43C88AB12BD55D690057757B /* String.swift in Sources */,
 				435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,6 +680,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43ED5E202BDAF15D00EE247B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43ED5E212BDAF15D00EE247B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43ED5E202BDAF15D00EE247B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		43ED5E232BDAF15D00EE247B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43ED5E202BDAF15D00EE247B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		43ED5E252BDAF15D00EE247B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43ED5E202BDAF15D00EE247B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 435433762BBD9862003348E1 /* Project object */;
 }

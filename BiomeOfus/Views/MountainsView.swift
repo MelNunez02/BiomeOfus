@@ -22,7 +22,7 @@ struct MountainsView: View {
             
             VStack {
                 RoundedRectangle(cornerRadius: 8)
-                        .fill(Color.green.opacity(0.4)) // Adjust the color and opacity here
+                        .fill(Color.red.opacity(0.4)) // Adjust the color and opacity here
                         .frame(width: 200, height: 50)
                         .offset(x: -150, y: -400)
                         .shadow(color: .black, radius: 10, x: 0, y: 0)
@@ -40,15 +40,16 @@ struct MountainsView: View {
                 
                 VStack{
                     Button(action: {
-                        print("Apple pressed")
+                        print("goat pressed")
                         showBiomeForm = true
                         
                     }) {
-                        Image("clearApple")
+                        Image("Goat2")
                             .resizable()
                             .scaledToFit()
+                            .offset(x: -150, y: -300)
                             .frame(width: 50)
-                            .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                            .shadow(color: .red, radius:10,  x: 0, y: 0)
                             .zIndex(1)
                    }
                     .buttonStyle(.borderless)
@@ -61,15 +62,16 @@ struct MountainsView: View {
                     
                     HStack{
                         Button(action: {
-                            print("Apple pressed")
+                            print("deer pressed")
                             showBiomeForm = true
                             
                         }) {
-                            Image("clearApple")
+                            Image("deer")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 50)
-                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .offset(x: -150, y: -40)
+                                .frame(width: 90)
+                                .shadow(color: .red , radius: 5, x: 0, y: 0)
                                 .zIndex(1)
                        }
                         .buttonStyle(.borderless)
@@ -81,15 +83,16 @@ struct MountainsView: View {
                         }
                         
                         Button(action: {
-                            print("Apple pressed")
+                            print("Canoe pressed")
                             showBiomeForm = true
                             
                         }) {
-                            Image("clearApple")
+                            Image("Canoe")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: 50)
-                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
+                                .offset(x: -150, y: 60)
+                                .frame(width: 70)
+                                .shadow(color: .red, radius: 10, x: 0, y: 0)
                                 .zIndex(1)
                        }
                         .buttonStyle(.borderless)
@@ -100,67 +103,7 @@ struct MountainsView: View {
                                 .edgesIgnoringSafeArea(.all)
                         }
                     }
-                    HStack{
-                        Button(action: {
-                            print("Apple pressed")
-                            showBiomeForm = true
-                            
-                        }) {
-                            Image("clearApple")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50)
-                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
-                                .zIndex(1)
-                       }
-                        .buttonStyle(.borderless)
-                        //Presents target View
-                        .sheet(isPresented: $showBiomeForm) {
-                            BiomeForm()
-                                .presentationDetents([.large])
-                                .edgesIgnoringSafeArea(.all)
-                        }
-                        
-                        Button(action: {
-                            print("Apple pressed")
-                            showBiomeForm = true
-                            
-                        }) {
-                            Image("clearApple")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50)
-                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
-                                .zIndex(1)
-                       }
-                        .buttonStyle(.borderless)
-                        //Presents target View
-                        .sheet(isPresented: $showBiomeForm) {
-                            BiomeForm()
-                                .presentationDetents([.large])
-                                .edgesIgnoringSafeArea(.all)
-                        }
-                        
-                        Button(action: {
-                            print("Apple pressed")
-                            showBiomeForm = true
-                            
-                        }) {
-                            Image("clearApple")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 50)
-                                .shadow(color: .accentColor , radius: 10, x: 0, y: 0)
-                                .zIndex(1)
-                       }
-                        .buttonStyle(.borderless)
-                        //Presents target View
-                        .sheet(isPresented: $showBiomeForm) {
-                            BiomeForm()
-                                .presentationDetents([.large])
-                                .edgesIgnoringSafeArea(.all)
-                        }
-                    }
+                                        
                 }.offset(x:-25, y:20)
                 
             }

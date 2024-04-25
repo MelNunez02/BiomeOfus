@@ -45,68 +45,64 @@ struct LoginScn: View {
                     ContentView(showDashboard: $showDashboard)
                     
                 } else {
-         
-                HStack{
-                    Image(systemName: "mail")
-                    TextField("Email", text: $email)
-                        .frame(width: 400)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                   
-                    
-                    if (email.count != 0){
-                        Image(systemName: email.isValidEmail() ? "checkmark" : "xmark" )
-                            .fontWeight(.bold)
-                            .foregroundColor(email.isValidEmail() ? .green : .red)
+                    HStack{
+                        Image(systemName: "mail")
+                        TextField("Email", text: $email)
+                            .frame(width: 400)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding()
+
+                        if (email.count != 0) {
+                            Image(systemName: email.isValidEmail() ? "checkmark" : "xmark" )
+                                .fontWeight(.bold)
+                                .foregroundColor(email.isValidEmail() ? .green : .red)
+                        }
                     }
-                }
-                HStack{
-                    Image(systemName: "lock")
-                    TextField("Password", text: $password)
-                        .padding()
-                        .frame(width: 400)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                   
-                     
-                    Image(systemName: "checkmark" )
-                        .fontWeight(.bold)
-                        .foregroundColor(.green)
-                }
+                    HStack{
+                        Image(systemName: "lock")
+                        TextField("Password", text: $password)
+                            .padding()
+                            .frame(width: 400)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                       
+                         
+                        Image(systemName: "checkmark" )
+                            .fontWeight(.bold)
+                            .foregroundColor(.green)
+                    }
                        
                         
-                Button(action: {
-                    print("button pressed")
-                    // Validate username and password
-                    if isValid(email: email, password: password) {
-                        isLoggedin = true
-                        login()
-                        isDetailViewPresented = true
-                        
-                    } else {
-                        showAlert = true
+                    Button(action: {
+                        print("button pressed")
+                        // Validate username and password
+                        if isValid(email: email, password: password) {
+                            isLoggedin = true
+                            register()
+                            isDetailViewPresented = true
+                            
+                        } else {
+                            showAlert = true
+                        }
+                    }) {
+                        Text("Sign Up")
+                            .padding()
+                            .foregroundColor(.black)
+                            .background(Color.yellow)
+                            .cornerRadius(10)
                     }
-                }) {
-                    Text("Log In")
-                        .padding()
-                        .foregroundColor(.black)
-                        .background(Color.yellow)
-                        .cornerRadius(10)
-                }
-                .padding()
-                .padding(.bottom, -10)
-                Button(action: {
-                    register()
-                }
-                       , label: {
-                    Text("Create an Account")
-                        .foregroundColor(.white)
-                        
-                })
+                    .padding()
+                    .padding(.bottom, -10)
+                    
+                    Button(action: {
+                        login()
+                    }, label: {
+                        Text("Already have an account? Login")
+                            .foregroundColor(.white)
+                    })
                     .padding()
                     .zIndex(1)
                 }
             }
-            
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Error"), message: Text("Invalid username or password"), dismissButton: .default(Text("OK")))

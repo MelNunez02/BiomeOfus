@@ -137,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				43C88AAD2BD55A410057757B /* Extensions */,
-				43C88AAC2BD5561F0057757B /* Views */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
 				43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */,
@@ -184,21 +183,14 @@
 			path = BiomeOfusUITests;
 			sourceTree = "<group>";
 		};
-		43C88AAC2BD5561F0057757B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				435433832BBD9862003348E1 /* DashboardView.swift */,
-				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
-				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
-				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		43C88AAD2BD55A410057757B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				43C88AB02BD55D690057757B /* String.swift */,
+				435433832BBD9862003348E1 /* DashboardView.swift */,
+				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
+				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
+				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";

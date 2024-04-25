@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 
 struct LoginScn: View {
@@ -78,7 +79,9 @@ struct LoginScn: View {
                     // Validate username and password
                     if isValid(email: email, password: password) {
                         isLoggedin = true
+                        login()
                         isDetailViewPresented = true
+                        
                     } else {
                         showAlert = true
                     }
@@ -91,7 +94,9 @@ struct LoginScn: View {
                 }
                 .padding()
                 .padding(.bottom, -10)
-                Button(action: {}
+                Button(action: {
+                    register()
+                }
                        , label: {
                     Text("Create an Account")
                         .foregroundColor(.white)
@@ -107,6 +112,23 @@ struct LoginScn: View {
             Alert(title: Text("Error"), message: Text("Invalid username or password"), dismissButton: .default(Text("OK")))
         }
     }
+    
+    func login() {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
+    func register() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+        }
+    }
+    
 }//end of screeen
 
 struct ContentView: View {
@@ -128,6 +150,7 @@ struct ContentView: View {
 func isValid(email: String, password: String) -> Bool {
    // Add your validation logic here (e.g., check against database)
    return !email.isEmpty && !password.isEmpty
+    
 }
 
 struct LoginScn_Previews: PreviewProvider {

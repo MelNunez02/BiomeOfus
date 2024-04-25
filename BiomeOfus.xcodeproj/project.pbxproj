@@ -33,6 +33,7 @@
 		43ED5E222BDAF15D00EE247B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E212BDAF15D00EE247B /* FirebaseAuth */; };
 		43ED5E242BDAF15D00EE247B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E232BDAF15D00EE247B /* FirebaseDatabase */; };
 		43ED5E262BDAF15D00EE247B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E252BDAF15D00EE247B /* FirebaseFirestore */; };
+		43ED5E282BDAFAC500EE247B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		438D401E2BD010DE00AAFE8D /* BiomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeView.swift; sourceTree = "<group>"; };
 		43C88AB02BD55D690057757B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +140,7 @@
 				43C88AAC2BD5561F0057757B /* Views */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
+				43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */,
 				435433872BBD9863003348E1 /* Preview Content */,
 			);
 			path = BiomeOfus;
@@ -321,6 +324,7 @@
 				435433892BBD9863003348E1 /* Preview Assets.xcassets in Resources */,
 				2189F9102BBF403E00264860 /* image10.png in Resources */,
 				2189F9112BBF403E00264860 /* image8.png in Resources */,
+				43ED5E282BDAFAC500EE247B /* GoogleService-Info.plist in Resources */,
 				2189F9172BBF4B5500264860 /* image11.png in Resources */,
 				2189F9032BBF3FD400264860 /* image2.png in Resources */,
 				2189F9192BBF4CDE00264860 /* image12.png in Resources */,
@@ -522,6 +526,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BiomeOfus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BiomeOfus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -550,6 +555,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BiomeOfus/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = BiomeOfus;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

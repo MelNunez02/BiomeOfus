@@ -66,10 +66,11 @@ struct LoginScn: View {
                             .frame(width: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                        
-                         
-                        Image(systemName: "checkmark" )
-                            .fontWeight(.bold)
-                            .foregroundColor(.green)
+                        if (password.count != 0) {
+                            Image(systemName: password.isValidPassword() ? "checkmark" : "xmark" )
+                                .fontWeight(.bold)
+                                .foregroundColor(password.isValidPassword() ? .green : .red)
+                        }
                     }
                     .padding(.horizontal)
                        
@@ -77,14 +78,7 @@ struct LoginScn: View {
                     Button(action: {
                         print("button pressed")
                         // Validate username and password
-                        if isValid(email: email, password: password) {
-                            isLoggedin = true
-                            register()
-                            isDetailViewPresented = true
-                            
-                        } else {
-                            showAlert = true
-                        }
+                        register()
                     }) {
                         Text("Sign Up")
                             .padding()
@@ -96,7 +90,15 @@ struct LoginScn: View {
                     .padding(.bottom, -10)
                     
                     Button(action: {
-                        login()
+                        if isValid(email: email, password: password) {
+                          //  isLoggedin = true
+                            login()
+                          //  isDetailViewPresented = true
+                            
+                        } else {
+                            showAlert = true
+                        }
+                       
                     }, label: {
                         Text("Already have an account? Login")
                             .foregroundColor(.white)

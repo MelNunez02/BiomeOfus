@@ -113,7 +113,7 @@ struct LoginScn: View {
                         
                         Button(action: {
                             if isValid(email: email, password: password) {
-                              //  isLoggedin = true
+                                isLoggedin = true
                                 login()
                               //  isDetailViewPresented = true
                                 

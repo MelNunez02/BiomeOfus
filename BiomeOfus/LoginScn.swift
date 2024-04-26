@@ -29,7 +29,6 @@ struct LoginScn: View {
                 .zIndex(0)
                 .edgesIgnoringSafeArea(.all)
             
-            
             VStack {
                 HStack {
                     Spacer()
@@ -77,8 +76,7 @@ struct LoginScn: View {
                         }
                     }
                     .padding(.horizontal)
-                       
-                        
+        
                     Button(action: {
                         print("Sign Up pressed")
                         // Validate username and password
@@ -94,9 +92,13 @@ struct LoginScn: View {
                     .padding()
                     .padding(.bottom, -10)
                     .sheet(isPresented: $isEmailRegistrationViewPresented) {
-                        EmailRegistrationView(email: email)
-                            .presentationDetents([.large])
-                            .edgesIgnoringSafeArea(.all)
+                        EmailRegistrationView(email: email, isPresented: $isEmailRegistrationViewPresented) {
+                            self.isEmailRegistrationViewPresented = false
+                            self.email = ""
+                            self.password = ""
+                        }
+                        .presentationDetents([.large])
+                        .edgesIgnoringSafeArea(.all)
                     }
                     
                     Button(action: {

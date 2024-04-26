@@ -9,8 +9,9 @@ import SwiftUI
 
 struct EmailRegistrationView: View {
     var email: String
-    @State private var showLoginScreen = false
-    let conitueActin: () -> Void
+    @Binding var isPresented: Bool
+    let continueAction: () -> Void
+
     
     var body: some View {
         VStack(spacing: 20) {
@@ -34,6 +35,8 @@ struct EmailRegistrationView: View {
                 .foregroundColor(.secondary)
             
             Button(action: {
+                print("Continue Button Pressed")
+                continueAction()
                
             }) {
                 Text("Continue")
@@ -50,11 +53,5 @@ struct EmailRegistrationView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color(.systemGroupedBackground))
         .edgesIgnoringSafeArea(.all)
-    }
-}
-
-struct EmailRegisteredView_Previews: PreviewProvider {
-    static var previews: some View {
-        EmailRegistrationView(email: "user@example.com")
     }
 }

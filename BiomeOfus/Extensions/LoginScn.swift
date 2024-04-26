@@ -48,21 +48,22 @@ struct LoginScn: View {
                     HStack{
                         Image(systemName: "mail")
                         TextField("Email", text: $email)
-                            .frame(width: 400)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
                             .padding()
-
+                            .frame(width: 300)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            
                         if (email.count != 0) {
                             Image(systemName: email.isValidEmail() ? "checkmark" : "xmark" )
                                 .fontWeight(.bold)
                                 .foregroundColor(email.isValidEmail() ? .green : .red)
                         }
                     }
+                    
                     HStack{
                         Image(systemName: "lock")
                         TextField("Password", text: $password)
                             .padding()
-                            .frame(width: 400)
+                            .frame(width: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                        
                          
@@ -70,6 +71,7 @@ struct LoginScn: View {
                             .fontWeight(.bold)
                             .foregroundColor(.green)
                     }
+                    .padding(.horizontal)
                        
                         
                     Button(action: {
@@ -103,6 +105,7 @@ struct LoginScn: View {
                     .zIndex(1)
                 }
             }
+            .padding(.horizontal)
         }
         .alert(isPresented: $showAlert) {
             Alert(title: Text("Error"), message: Text("Invalid username or password"), dismissButton: .default(Text("OK")))

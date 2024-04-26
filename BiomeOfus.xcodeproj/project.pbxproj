@@ -40,6 +40,7 @@
 		A072F7BD2BDB100D0093E304 /* GrasslandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7BC2BDB100D0093E304 /* GrasslandsView.swift */; };
 		A072F7BF2BDB101E0093E304 /* CherryBlossomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7BE2BDB101E0093E304 /* CherryBlossomView.swift */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
+		A0CE12122BD0D15B000CB4DA /* ForestBiome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		A072F7BC2BDB100D0093E304 /* GrasslandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasslandsView.swift; sourceTree = "<group>"; };
 		A072F7BE2BDB101E0093E304 /* CherryBlossomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherryBlossomView.swift; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
+		A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestBiome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

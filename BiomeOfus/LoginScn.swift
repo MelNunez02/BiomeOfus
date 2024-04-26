@@ -14,6 +14,7 @@ struct LoginScn: View {
        @State private var isLoggedin: Bool = false
        @State private var showDashboard = false // For presenting the Dashboard
        @State private var showAlert: Bool = false
+       
 
     var body: some View {
         ZStack {

@@ -5,16 +5,16 @@ struct DashboardView: View {
     @State private var headerImage = true
     
     @State private var isBiomeViewPresented = false
-    @State private var MountainsViewPresented = false
-    @State private var BeachViewPresented = false
-    @State private var OceanViewPresented = false
-    @State private var JungleViewPresented = false
-    @State private var SnowViewPresented = false
-    @State private var DesertViewPresented = false
-    @State private var NetherViewPresented = false
-    @State private var SwampViewPresented = false
-    @State private var GreasslandsViewPresented = false
-    @State private var CherryBlossomsViewPresented = false
+    @State private var isMountainsViewPresented = false
+    @State private var isBeachViewPresented = false
+    @State private var isOceanViewPresented = false
+    @State private var isJungleViewPresented = false
+    @State private var isSnowViewPresented = false
+    @State private var isDesertViewPresented = false
+    @State private var isNetherViewPresented = false
+    @State private var isSwampViewPresented = false
+    @State private var isGrasslandsViewPresented = false
+    @State private var isCherryBlossomViewPresented = false
     
     var body: some View {
         
@@ -46,35 +46,31 @@ struct DashboardView: View {
                             ForEach(1..<13) { index in
                                 //Buttons code start here
                                 Button(action: {
-                                    if index == 0 {
+                                    if index == 1 {
                                         // Present BiomeView here
-                                        self.isBiomeViewPresented = true
-                                    } else if index == 1 {
-                                        self.isBiomeViewPresented = true
+                                        self.isMountainsViewPresented = true
                                     } else if index == 2 {
-                                        self.isBiomeViewPresented = true
+                                        self.isBeachViewPresented = true
                                     } else if index == 3 {
-                                        self.isBiomeViewPresented = true
+                                        self.isCherryBlossomViewPresented = true
                                     } else if index == 4 {
-                                        self.isBiomeViewPresented = true
+                                        self.isGrasslandsViewPresented = true
                                     } else if index == 5 {
-                                        self.isBiomeViewPresented = true
+                                        self.isOceanViewPresented = true
                                     } else if index == 6 {
-                                        self.isBiomeViewPresented = true
+                                        self.isJungleViewPresented = true
                                     } else if index == 7 {
-                                        self.isBiomeViewPresented = true
+                                        self.isSnowViewPresented = true
                                     } else if index == 8 {
-                                        self.isBiomeViewPresented = true
+                                        self.isDesertViewPresented = true
                                     } else if index == 9 {
-                                        self.isBiomeViewPresented = true
+                                        self.isBeachViewPresented = true
                                     } else if index == 10 {
                                         self.isBiomeViewPresented = true
                                     } else if index == 11 {
-                                        self.isBiomeViewPresented = true
+                                        self.isNetherViewPresented = true
                                     } else if index == 12 {
-                                        self.isBiomeViewPresented = true
-                                    } else if index == 13 {
-                                        self.isBiomeViewPresented = true
+                                        self.isSwampViewPresented = true
                                     }
                                     else {
                                         // Default behavior for other images
@@ -92,6 +88,56 @@ struct DashboardView: View {
                                 .buttonStyle(.borderless)
                                 .sheet(isPresented: $isBiomeViewPresented) {
                                     BiomeView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isMountainsViewPresented) {
+                                    MountainsView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isBeachViewPresented) {
+                                    BeachView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isOceanViewPresented) {
+                                    OceanView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isJungleViewPresented) {
+                                    JungleView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isSnowViewPresented) {
+                                    SnowView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isDesertViewPresented) {
+                                    DesertView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isSwampViewPresented) {
+                                    SwampView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isGrasslandsViewPresented) {
+                                    GrasslandsView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isCherryBlossomViewPresented) {
+                                    CherryBlossomView()
+                                        .presentationDetents([.large])
+                                        .edgesIgnoringSafeArea(.all)
+                                }
+                                .sheet(isPresented: $isNetherViewPresented) {
+                                    NetherView()
                                         .presentationDetents([.large])
                                         .edgesIgnoringSafeArea(.all)
                                 }

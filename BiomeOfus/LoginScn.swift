@@ -48,6 +48,7 @@ struct LoginScn: View {
                     HStack{
                         Image(systemName: "mail")
                         TextField("Email", text: $email)
+                            .autocapitalization(.none)
                             .padding()
                             .frame(width: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -61,10 +62,11 @@ struct LoginScn: View {
                     
                     HStack{
                         Image(systemName: "lock")
-                        TextField("Password", text: $password)
+                        SecureField("Password", text: $password)
                             .padding()
                             .frame(width: 300)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .autocapitalization(.none)
                        
                         if (password.count != 0) {
                             Image(systemName: password.isValidPassword() ? "checkmark" : "xmark" )

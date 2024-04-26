@@ -2,8 +2,19 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var showProfile = false
-    @State private var isBiomeViewPresented = false
     @State private var headerImage = true
+    
+    @State private var isBiomeViewPresented = false
+    @State private var MountainsViewPresented = false
+    @State private var BeachViewPresented = false
+    @State private var OceanViewPresented = false
+    @State private var JungleViewPresented = false
+    @State private var SnowViewPresented = false
+    @State private var DesertViewPresented = false
+    @State private var NetherViewPresented = false
+    @State private var SwampViewPresented = false
+    @State private var GreasslandsViewPresented = false
+    @State private var CherryBlossomsViewPresented = false
     
     var body: some View {
         

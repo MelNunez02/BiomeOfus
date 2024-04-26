@@ -1,0 +1,10 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+## user settings
+xcuserdata
+
+## Mac OS Finder Files
+.DS_Store
+

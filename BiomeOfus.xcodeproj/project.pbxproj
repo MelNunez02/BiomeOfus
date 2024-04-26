@@ -29,6 +29,16 @@
 		4354339D2BBD9863003348E1 /* BiomeOfusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */; };
 		4354339F2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */; };
 		438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438D401E2BD010DE00AAFE8D /* BiomeView.swift */; };
+		A072F7A92BDB0E390093E304 /* MountainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7A82BDB0E390093E304 /* MountainsView.swift */; };
+		A072F7AB2BDB0E5D0093E304 /* BeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7AA2BDB0E5D0093E304 /* BeachView.swift */; };
+		A072F7B12BDB0EAA0093E304 /* OceanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7B02BDB0EAA0093E304 /* OceanView.swift */; };
+		A072F7B32BDB0ED00093E304 /* JungleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7B22BDB0ED00093E304 /* JungleView.swift */; };
+		A072F7B52BDB0F070093E304 /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7B42BDB0F070093E304 /* SnowView.swift */; };
+		A072F7B72BDB0F1A0093E304 /* DesertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7B62BDB0F1A0093E304 /* DesertView.swift */; };
+		A072F7B92BDB0F510093E304 /* NetherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7B82BDB0F510093E304 /* NetherView.swift */; };
+		A072F7BB2BDB0F7A0093E304 /* SwampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7BA2BDB0F7A0093E304 /* SwampView.swift */; };
+		A072F7BD2BDB100D0093E304 /* GrasslandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7BC2BDB100D0093E304 /* GrasslandsView.swift */; };
+		A072F7BF2BDB101E0093E304 /* CherryBlossomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072F7BE2BDB101E0093E304 /* CherryBlossomView.swift */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
 		A0CE12122BD0D15B000CB4DA /* ForestBiome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */; };
 /* End PBXBuildFile section */
@@ -76,6 +86,16 @@
 		4354339C2BBD9863003348E1 /* BiomeOfusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITests.swift; sourceTree = "<group>"; };
 		4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeOfusUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		438D401E2BD010DE00AAFE8D /* BiomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeView.swift; sourceTree = "<group>"; };
+		A072F7A82BDB0E390093E304 /* MountainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsView.swift; sourceTree = "<group>"; };
+		A072F7AA2BDB0E5D0093E304 /* BeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeachView.swift; sourceTree = "<group>"; };
+		A072F7B02BDB0EAA0093E304 /* OceanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanView.swift; sourceTree = "<group>"; };
+		A072F7B22BDB0ED00093E304 /* JungleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JungleView.swift; sourceTree = "<group>"; };
+		A072F7B42BDB0F070093E304 /* SnowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
+		A072F7B62BDB0F1A0093E304 /* DesertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesertView.swift; sourceTree = "<group>"; };
+		A072F7B82BDB0F510093E304 /* NetherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetherView.swift; sourceTree = "<group>"; };
+		A072F7BA2BDB0F7A0093E304 /* SwampView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwampView.swift; sourceTree = "<group>"; };
+		A072F7BC2BDB100D0093E304 /* GrasslandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrasslandsView.swift; sourceTree = "<group>"; };
+		A072F7BE2BDB101E0093E304 /* CherryBlossomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherryBlossomView.swift; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
 		A0CE12112BD0D15B000CB4DA /* ForestBiome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestBiome.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,11 +148,10 @@
 		435433802BBD9862003348E1 /* BiomeOfus */ = {
 			isa = PBXGroup;
 			children = (
+				A072F7A72BDB0DE30093E304 /* Views */,
 				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
-				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
 				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
-				435433832BBD9862003348E1 /* DashboardView.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
 				435433872BBD9863003348E1 /* Preview Content */,
 			);
@@ -175,6 +194,25 @@
 				4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */,
 			);
 			path = BiomeOfusUITests;
+			sourceTree = "<group>";
+		};
+		A072F7A72BDB0DE30093E304 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				435433832BBD9862003348E1 /* DashboardView.swift */,
+				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
+				A072F7A82BDB0E390093E304 /* MountainsView.swift */,
+				A072F7AA2BDB0E5D0093E304 /* BeachView.swift */,
+				A072F7B02BDB0EAA0093E304 /* OceanView.swift */,
+				A072F7B22BDB0ED00093E304 /* JungleView.swift */,
+				A072F7B42BDB0F070093E304 /* SnowView.swift */,
+				A072F7B62BDB0F1A0093E304 /* DesertView.swift */,
+				A072F7B82BDB0F510093E304 /* NetherView.swift */,
+				A072F7BA2BDB0F7A0093E304 /* SwampView.swift */,
+				A072F7BC2BDB100D0093E304 /* GrasslandsView.swift */,
+				A072F7BE2BDB101E0093E304 /* CherryBlossomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,11 +358,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A072F7B92BDB0F510093E304 /* NetherView.swift in Sources */,
 				2189F8FA2BBF2E2B00264860 /* DashboardView.swift in Sources */,
+				A072F7BD2BDB100D0093E304 /* GrasslandsView.swift in Sources */,
 				438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */,
+				A072F7BF2BDB101E0093E304 /* CherryBlossomView.swift in Sources */,
+				A072F7BB2BDB0F7A0093E304 /* SwampView.swift in Sources */,
+				A072F7B32BDB0ED00093E304 /* JungleView.swift in Sources */,
+				A072F7B72BDB0F1A0093E304 /* DesertView.swift in Sources */,
 				A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */,
 				434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */,
+				A072F7AB2BDB0E5D0093E304 /* BeachView.swift in Sources */,
+				A072F7B12BDB0EAA0093E304 /* OceanView.swift in Sources */,
 				435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */,
+				A072F7A92BDB0E390093E304 /* MountainsView.swift in Sources */,
+				A072F7B52BDB0F070093E304 /* SnowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

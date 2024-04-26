@@ -17,6 +17,8 @@ struct LoginScn: View {
     @State private var showDashboard = false // For presenting the Dashboard
     @State private var showAlert: Bool = false
     @State private var isUsernameValid: Bool = false
+    @State private var isEmailRegistrationViewPresented: Bool = false
+    @State private var LoginScnPresented: Bool = false
        
 
     var body: some View {
@@ -78,9 +80,10 @@ struct LoginScn: View {
                        
                         
                     Button(action: {
-                        print("button pressed")
+                        print("Sign Up pressed")
                         // Validate username and password
                         register()
+                        self.isEmailRegistrationViewPresented = true
                     }) {
                         Text("Sign Up")
                             .padding()
@@ -90,6 +93,11 @@ struct LoginScn: View {
                     }
                     .padding()
                     .padding(.bottom, -10)
+                    .sheet(isPresented: $isEmailRegistrationViewPresented) {
+                        EmailRegistrationView(email: email)
+                            .presentationDetents([.large])
+                            .edgesIgnoringSafeArea(.all)
+                    }
                     
                     Button(action: {
                         if isValid(email: email, password: password) {

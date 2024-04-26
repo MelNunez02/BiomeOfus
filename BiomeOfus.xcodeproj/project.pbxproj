@@ -34,6 +34,7 @@
 		43ED5E242BDAF15D00EE247B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E232BDAF15D00EE247B /* FirebaseDatabase */; };
 		43ED5E262BDAF15D00EE247B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 43ED5E252BDAF15D00EE247B /* FirebaseFirestore */; };
 		43ED5E282BDAFAC500EE247B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */; };
+		43ED5E2A2BDB374100EE247B /* EmailRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ED5E292BDB374100EE247B /* EmailRegistrationView.swift */; };
 		A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		438D401E2BD010DE00AAFE8D /* BiomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiomeView.swift; sourceTree = "<group>"; };
 		43C88AB02BD55D690057757B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		43ED5E292BDB374100EE247B /* EmailRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRegistrationView.swift; sourceTree = "<group>"; };
 		A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,8 +138,13 @@
 		435433802BBD9862003348E1 /* BiomeOfus */ = {
 			isa = PBXGroup;
 			children = (
-				43C88AAD2BD55A410057757B /* Extensions */,
+				43C88AB02BD55D690057757B /* String.swift */,
+				435433832BBD9862003348E1 /* DashboardView.swift */,
+				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
+				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
+				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
 				435433812BBD9862003348E1 /* BiomeOfusApp.swift */,
+				43ED5E292BDB374100EE247B /* EmailRegistrationView.swift */,
 				435433852BBD9863003348E1 /* Assets.xcassets */,
 				43ED5E272BDAFAC500EE247B /* GoogleService-Info.plist */,
 				435433872BBD9863003348E1 /* Preview Content */,
@@ -181,18 +188,6 @@
 				4354339E2BBD9863003348E1 /* BiomeOfusUITestsLaunchTests.swift */,
 			);
 			path = BiomeOfusUITests;
-			sourceTree = "<group>";
-		};
-		43C88AAD2BD55A410057757B /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				43C88AB02BD55D690057757B /* String.swift */,
-				435433832BBD9862003348E1 /* DashboardView.swift */,
-				434459FC2BD1893E00C9B5BC /* BiomeForm.swift */,
-				A0CE120D2BD0A80A000CB4DA /* LoginScn.swift */,
-				438D401E2BD010DE00AAFE8D /* BiomeView.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +345,7 @@
 				2189F8FA2BBF2E2B00264860 /* DashboardView.swift in Sources */,
 				438D401F2BD010DE00AAFE8D /* BiomeView.swift in Sources */,
 				A0CE120E2BD0A80A000CB4DA /* LoginScn.swift in Sources */,
+				43ED5E2A2BDB374100EE247B /* EmailRegistrationView.swift in Sources */,
 				434459FD2BD1893E00C9B5BC /* BiomeForm.swift in Sources */,
 				43C88AB12BD55D690057757B /* String.swift in Sources */,
 				435433822BBD9862003348E1 /* BiomeOfusApp.swift in Sources */,
